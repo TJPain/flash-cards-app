@@ -64,6 +64,7 @@ export default {
 
       // Define the alias for the components directory
       config.resolve.alias['@components'] = path.resolve(__dirname, 'components');
+      config.resolve.alias['@sections'] = path.resolve(__dirname, 'sections');
     }
   },
 

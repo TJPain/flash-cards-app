@@ -9,4 +9,5 @@ You can directly use them in pages and other components without the need to impo
 - `<NavigationElementsMainMobileNavigation>` | `<navigation-elements-main-mobile-navigation>` (components/global/navigation-elements/MainMobileNavigation.vue)
 - `<NavigationElementsMainNavigation>` | `<navigation-elements-main-navigation>` (components/global/navigation-elements/MainNavigation.vue)
 - `<CardsPoseDetailsCard>` | `<cards-pose-details-card>` (components/cards/PoseDetailsCard.vue)
+- `<CardsPoseQuizCard>` | `<cards-pose-quiz-card>` (components/cards/PoseQuizCard.vue)
 - `<HomeHeroBanner>` | `<home-hero-banner>` (components/home/HeroBanner.vue)

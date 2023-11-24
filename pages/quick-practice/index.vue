@@ -1,11 +1,25 @@
 <template>
-    <p>See all page</p>
+    <PoseFlashCards 
+      :poses="randomPoses"
+    />
 </template>
   
 <script>
+import PoseFlashCards from '@sections/flash-cards/PoseFlashCards.vue'
+import getYogaPoses from '@/services/yogaPosesService';
+
 export default {
-layout: 'DefaultLayout',
-head() {
+  components: {
+    PoseFlashCards,
+  },
+  layout: 'DefaultLayout',
+  data() {
+      return {
+          poses: [],
+          randomPoses: []
+      };
+  },
+  head() {
     return {
       title: `Quick practice`,
       meta: [
@@ -67,6 +81,18 @@ head() {
         },
       ],
     }
-},
+  },
+  created() {
+    this.poses = getYogaPoses();
+    this.selectRandomPoses();
+  },
+  methods: {
+    selectRandomPoses() {
+        // Shuffle the array and pick the first 10 elements
+        this.randomPoses = this.poses
+                            .sort(() => 0.5 - Math.random())
+                            .slice(0, 10);
+    }
+  }
 }
 </script>
