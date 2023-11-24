@@ -1,0 +1,30 @@
+[
+  {
+    "name": "all-cards",
+    "path": "/all-cards",
+    "component": "/Users/tompain/Developer/flash-cards-app/pages/all-cards/index.vue",
+    "chunkName": "pages/all-cards/index",
+    "_name": "_4a2c4006"
+  },
+  {
+    "name": "practice",
+    "path": "/practice",
+    "component": "/Users/tompain/Developer/flash-cards-app/pages/practice/index.vue",
+    "chunkName": "pages/practice/index",
+    "_name": "_114d62a2"
+  },
+  {
+    "name": "quick-practice",
+    "path": "/quick-practice",
+    "component": "/Users/tompain/Developer/flash-cards-app/pages/quick-practice/index.vue",
+    "chunkName": "pages/quick-practice/index",
+    "_name": "_68a58982"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/tompain/Developer/flash-cards-app/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4f5a9cde"
+  }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "english_name": "Downward facing dog",
+        "sanskrit_name": "Adho mukha svanasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825404/yoga-site/poses/1_eaoxsq.jpg"
+    },
+    {
+        "id": 2,
+        "english_name": "Cresent moon",
+        "sanskrit_name": "Ajaneysana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825404/yoga-site/poses/2_fzcvyj.jpg"
+    },
+    {
+        "id": 3,
+        "english_name": "Happy baby",
+        "sanskrit_name": "Ananda balasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825404/yoga-site/poses/3_wef2eg.jpg"
+    },
+    {
+        "id": 4,
+        "english_name": "Half lotus tip toe pose",
+        "sanskrit_name": "Ardha baddha padma",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825403/yoga-site/poses/4_iq4bgz.jpg"
+    },
+    {
+        "id": 5,
+        "english_name": "Half moon",
+        "sanskrit_name": "Ardha chandrasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825403/yoga-site/poses/5_zo922k.jpg"
+    },
+    {
+        "id": 6,
+        "english_name": "Seated half twist or lord of fishes",
+        "sanskrit_name": "Ardha matsyendrasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825402/yoga-site/poses/6_obuqow.jpg"
+    },
+    {
+        "id": 7,
+        "english_name": "Reverse table top",
+        "sanskrit_name": "Ardha prvottanasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825402/yoga-site/poses/7_rqcsd7.jpg"
+    },
+    {
+        "id": 8,
+        "english_name": "Eight point pose",
+        "sanskrit_name": "Ashtangasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825402/yoga-site/poses/8_v34ijs.jpg"
+    },
+    {
+        "id": 9,
+        "english_name": "Eight angle pose",
+        "sanskrit_name": "Astavakrasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825401/yoga-site/poses/9_co3r59.jpg"
+    },
+    {
+        "id": 10,
+        "english_name": "Butterfly pose",
+        "sanskrit_name": "Baddha konasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825401/yoga-site/poses/10_gxeykb.jpg"
+    },
+    {
+        "id": 11,
+        "english_name": "Crow pose",
+        "sanskrit_name": "Bakasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825400/yoga-site/poses/11_ryexin.jpg"
+    },
+    {
+        "id": 12,
+        "english_name": "Child pose",
+        "sanskrit_name": "Balasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825400/yoga-site/poses/12_ipahr3.jpg"
+    },
+    {
+        "id": 13,
+        "english_name": "Cobra pose",
+        "sanskrit_name": "Bhujangasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825400/yoga-site/poses/13_e7bol0.jpg"
+    },
+    {
+        "id": 14,
+        "english_name": "Flipped dog pose",
+        "sanskrit_name": "Camatkarasana",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825400/yoga-site/poses/14_kwysbb.jpg"
+    },
+    {
+        "id": 15,
+        "english_name": "Tripod headstand with knees on elbows",
+        "sanskrit_name": "Catur svanasana sirsasana janu kurpara",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1700825399/yoga-site/poses/15_z3lezz.jpg"
+    }
+]
+  

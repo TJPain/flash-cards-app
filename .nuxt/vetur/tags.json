@@ -1,0 +1,14 @@
+{
+  "NavigationElementsMainMobileNavigation": {
+    "description": "Auto imported from components/global/navigation-elements/MainMobileNavigation.vue"
+  },
+  "NavigationElementsMainNavigation": {
+    "description": "Auto imported from components/global/navigation-elements/MainNavigation.vue"
+  },
+  "CardsPoseDetailsCard": {
+    "description": "Auto imported from components/cards/PoseDetailsCard.vue"
+  },
+  "HomeHeroBanner": {
+    "description": "Auto imported from components/home/HeroBanner.vue"
+  }
+}
