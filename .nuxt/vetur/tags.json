@@ -5,13 +5,13 @@
   "NavigationElementsMainNavigation": {
     "description": "Auto imported from components/global/navigation-elements/MainNavigation.vue"
   },
-  "HomeHeroBanner": {
-    "description": "Auto imported from components/home/HeroBanner.vue"
-  },
   "CardsPoseDetailsCard": {
     "description": "Auto imported from components/cards/PoseDetailsCard.vue"
   },
   "CardsPoseQuizCard": {
     "description": "Auto imported from components/cards/PoseQuizCard.vue"
+  },
+  "HomeHeroBanner": {
+    "description": "Auto imported from components/home/HeroBanner.vue"
   }
 }

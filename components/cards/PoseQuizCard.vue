@@ -10,7 +10,8 @@
                 v-for="answer in shuffledAnswers" 
                 :key="answer" 
                 class="card__answer-button"
-                @click="selectAnswer(answer)"
+                :class="{ 'selected-answer': selected && answer === selectedAnswer }"
+                @click="!selected && selectAnswer(answer)"
                 >
                     {{ answer }}
                 </button>
@@ -44,30 +45,30 @@ export default {
     },
     data() {
         return {
-        additionalAnswers: []
+            additionalAnswers: [],
+            selected: false,
+            selectedAnswer: null
         };
     },
     computed: {
         shuffledAnswers() {
-        const answers = [...this.additionalAnswers, this.sanskritName];
-        return this.shuffleArray(answers);
+            const answers = [...this.additionalAnswers, this.sanskritName];
+            return answers.sort(() => 0.5 - Math.random());
         }
     },
     created() {
         this.additionalAnswers = getRandomAnswers(this.sanskritName);
     },
     methods: {
-        shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-        },
         selectAnswer(answer) {
-        const result = answer === this.sanskritName ? 'correct' : 'incorrect';
-        this.$emit('answerSelected', result);
-        }
+            if (this.selected) return;
+
+            this.selectedAnswer = answer;
+            this.selected = true;
+
+            const result = answer === this.sanskritName ? 'correct' : 'incorrect';
+            this.$emit('answerSelected', result);
+        },
     }
 }
 </script>
@@ -128,7 +129,10 @@ export default {
         background-color: #e0dbda;
         color: #8b8988;
     }
-
+    .selected-answer {
+        background-color: #e0dbda;
+        color: #8b8988;
+    }
     @media (max-width: 1200px) {
         .card__image {
             width: 700px;

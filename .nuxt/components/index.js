@@ -1,8 +1,8 @@
 export { default as NavigationElementsMainMobileNavigation } from '../../components/global/navigation-elements/MainMobileNavigation.vue'
 export { default as NavigationElementsMainNavigation } from '../../components/global/navigation-elements/MainNavigation.vue'
-export { default as HomeHeroBanner } from '../../components/home/HeroBanner.vue'
 export { default as CardsPoseDetailsCard } from '../../components/cards/PoseDetailsCard.vue'
 export { default as CardsPoseQuizCard } from '../../components/cards/PoseQuizCard.vue'
+export { default as HomeHeroBanner } from '../../components/home/HeroBanner.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
