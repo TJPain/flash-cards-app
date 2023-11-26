@@ -16,7 +16,7 @@
     <div class="hero__contents-wrapper">
       <div class="hero__buttons-wrapper">
         <div class="hero__buttons-glass-background">
-          <p class="hero__glass-title">Practice all 83 poses or 10 at random</p>
+          <p class="hero__glass-title">Practice all 79 poses or 10 at random</p>
           <div class="hero_buttons-flex-container">
             <a class="hero__cta-button" href="/practice"> Practice all </a>
             <a class="hero__cta-button" href="/quick-practice"> Quick practice </a>

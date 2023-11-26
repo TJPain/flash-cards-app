@@ -39,7 +39,7 @@ export default {
         },
         showEnglishNames: {
             type: Boolean,
-            required: true
+            default: false,
         }
     },
     data() {
@@ -76,26 +76,22 @@ export default {
     .card {
         border: 1px solid #e3e3e3;
         border-radius: 20px;
-        margin: 10px;
+        margin: 10px 10px 20px 10px;
         padding: 25px 30px 25px 25px;
         display: flex;
         flex-direction: row;
     }
     .card__image-container {
-        height: 450px;
+        height: auto;
         width: auto;
         border-radius: 10px;
-        background-color: #c8baa8;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
         text-align: center;
         overflow: hidden;
         flex-shrink: 0;
     }
     .card__image {
-        height: 450px;
-        width: auto;
+        width: 780px;
+        height: auto;
         border-radius: 10px;
     }
     .card__text-wrapper {
@@ -125,10 +121,47 @@ export default {
         background-color: #f2efee;
         color: #9a9796;
         transition: 0.25s ease-in-out;
+        font-size: 15px;
     }
     .card__answer-button:hover {
         cursor: pointer;
         background-color: #e0dbda;
         color: #8b8988;
+    }
+
+    @media (max-width: 1200px) {
+        .card__image {
+            width: 700px;
+        }
+    }
+    @media (max-width: 1100px) {
+        .card__image {
+            width: 600px;
+        }
+    }
+    @media (max-width: 1000px) {
+        .card__image {
+            width: 500px;
+        }
+    }
+    @media (max-width: 900px) {
+        .card {
+            flex-direction: column;
+        }
+        .card__image-container {
+            margin-bottom: 20px;
+        }
+        .card__image {
+            width: 100%;
+        }
+        .card__text-wrapper {
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 600px) {
+        .card__answer-button:hover {
+            background-color: #f2efee;
+            color: #9a9796;
+        }
     }
 </style>

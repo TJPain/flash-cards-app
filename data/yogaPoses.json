@@ -8,7 +8,7 @@
     },
     {
         "id": 42,
-        "english_name": "Crescent moon",
+        "english_name": "Crescent Moon | High Lunge",
         "sanskrit_name": "Ajaneyasana",
         "image_url": "https://cdn.yogajournal.com/wp-content/uploads/2022/03/350-yoga-journal-2022-C-andrew-clark-BC8I1025-1-1.jpg?crop=535:301&width=1070&enable=upscale",
         "tags": ["Standing Yoga Poses"]
@@ -101,7 +101,7 @@
         "id": 56,
         "english_name": "Pigeon Pose",
         "sanskrit_name": "Eka Pada Rajakapotasana",
-        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701021405/yoga-site/poses/yoqnayzlgnw5zerhsfrw.jpg",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701031743/yoga-site/poses/pigeon-pose_o7mfrn.jpg",
         "tags": ["Yoga Backbends"]
     },
     {
@@ -234,7 +234,7 @@
         "id": 91,
         "english_name": "Wide Legged Forward Bend",
         "sanskrit_name": "Prasarita Padottanasana",
-        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701021405/yoga-site/poses/yoqnayzlgnw5zerhsfrw.jpg",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701021794/yoga-site/poses/wide-legged-forward-fold_wsyhti.jpg",
         "tags": ["Forward Bend Yoga Poses", "Hip-Opening Yoga Poses", "Standing Yoga Poses", "Strengthening Yoga Poses"]
     },
     {
@@ -308,13 +308,6 @@
         "tags": ["Forward Bend Yoga Poses"]
     },
     {
-        "id": 41,
-        "english_name": "High Lunge",
-        "sanskrit_name": "Utthita Ashwa Sanchalanasana",
-        "image_url": "https://cdn.yogajournal.com/wp-content/uploads/2021/11/Uttanasana-Pose_Andrew-Clark_2400x1350.jpeg?crop=16:9&width=1500",
-        "tags": ["Standing Yoga Poses"]
-    },
-    {
         "id": 22,
         "english_name": "Extended Hand-To-Big-Toe Pose",
         "sanskrit_name": "Utthita Hasta Padangustasana A",
@@ -325,7 +318,7 @@
         "id": 93,
         "english_name": "Lifted Hand-To-Big-Toe Pose",
         "sanskrit_name": "Utthita Hasta Padangustasana B",
-        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701022112/yoga-site/poses/extended-hand-to-big-toe-pose_yydysh.jpg",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701027377/yoga-site/poses/standing-hand-to-big-toe-pose_gquoyr.jpg",
         "tags": ["Balancing Yoga Poses", "Hip-Opening Yoga Poses", "Standing Yoga Poses"]
     },
     {
@@ -388,7 +381,7 @@
         "id": 94,
         "english_name": "Half Lotus Tip Toe Pose",
         "sanskrit_name": "Ardha Baddha Padma Padangusthasana",
-        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701023509/yoga-site/poses/half-lotus-tip-toe-pose_zzybuk.jpg",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701027699/yoga-site/poses/half-lotus-tip-toe-pose_jvkyer.jpg",
         "tags": [""]
     },
     {
@@ -532,13 +525,6 @@
         "tags": ["Standing Yoga Poses"]
     },
     {
-        "id": 33,
-        "english_name": "Half Frog Pose",
-        "sanskrit_name": "Ardha Bhekasana",
-        "image_url": "https://cdn.yogajournal.com/wp-content/uploads/2022/03/321-yoga-journal-2022-C-andrew-clark-BC8I0728_1.jpg?crop=535:301&width=1070&enable=upscale",
-        "tags": ["Chest-Opening Yoga Poses", "Yoga Backbends"]
-    },
-    {
         "id": 36,
         "english_name": "Handstand",
         "sanskrit_name": "Adho Mukha Vrksasana",
@@ -560,13 +546,6 @@
         "tags": ["Chest-Opening Yoga Poses", "Strengthening Yoga Poses", "Yoga Backbends"]
     },
     {
-        "id": 48,
-        "english_name": "Low Lunge",
-        "sanskrit_name": "Anjaneyasana",
-        "image_url": "https://cdn.yogajournal.com/wp-content/uploads/2022/07/Low-Lunge-Mod-1_Andrew-Clark-2.jpg?crop=16:9&width=1500",
-        "tags": ["Standing Yoga Poses"]
-    },
-    {
         "id": 51,
         "english_name": "Mountain Pose",
         "sanskrit_name": "Tadasana",
@@ -583,7 +562,7 @@
 
     {
         "id": 77,
-        "english_name": "Standing Half Forward Bend",
+        "english_name": "Standing Half Forward Bend | Upward halfway lift",
         "sanskrit_name": "Ardha Uttanasana",
         "image_url": "https://cdn.yogajournal.com/wp-content/uploads/2022/05/forward-bend-andrew-clark.jpg?crop=535:301&width=1070&enable=upscale",
         "tags": ["Forward Bend Yoga Poses", "Standing Yoga Poses"]
@@ -592,7 +571,7 @@
         "id": 78,
         "english_name": "Standing Split",
         "sanskrit_name": "Urdhva Prasarita Eka Padasana",
-        "image_url": "https://cdn.yogajournal.com/wp-content/uploads/2008/06/Standing-Splits_Andrew-Clark-scaled.jpg?crop=535:301&width=1070&enable=upscale",
+        "image_url": "https://res.cloudinary.com/tom-pain/image/upload/v1701031492/yoga-site/poses/standing-splits_khvmu2.jpg",
         "tags": ["Forward Bend Yoga Poses", "Standing Yoga Poses"]
     },
     {

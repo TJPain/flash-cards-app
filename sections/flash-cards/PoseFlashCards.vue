@@ -46,9 +46,22 @@
             :show-english-names="showEnglishNames"
             @answerSelected="handleAnswer"
         />
-        <p v-if="showResult">{{ resultMessage }}</p>
-        <button v-if="showResult" @click="goToNextCard">Next question</button>
-        <p v-if="quizCompleted">Your score: {{ correctCount }} out of {{ poses.length }}</p>
+        <p v-if="showResult" class="flash-cards__results-text">
+            {{ resultMessage }}
+        </p>
+        <div v-if="showResult" class="flash-cards__next-btn-container">
+            <button class="flash-cards__next-btn" @click="goToNextCard">Next question</button>
+        </div>
+        <div v-if="quizCompleted">
+            <p  class="flash-cards__results-text">
+                Your score: {{ correctCount }} out of {{ poses.length }} ({{ (correctCount / poses.length) * 100 }} %)
+            </p>
+            <div class="ctas__wrapper">
+                <a class="flash-cards__next-btn" href="/quick-practice"> Quick practice </a>
+                <a class="flash-cards__next-btn" href="/practice"> Practice all </a>
+                <a class="flash-cards__next-btn" href="/all-cards">See all poses</a>
+            </div>
+        </div>
     </div>
 </template>
   
@@ -73,11 +86,13 @@ export default {
             showResult: false,
             resultMessage: '',
             showSettings: false,
+            quizCompleted: false
         };
     },
     computed: {
         progressPercentage() {
-            return this.currentCardIndex / this.poses.length * 100;
+            const percentage = this.currentCardIndex / this.poses.length * 100;
+            return Math.round(percentage);
         },
         progressBarStyle() {
             const borderRadius = this.progressPercentage === 100 ? '15px' : '15px 0 0 15px';
@@ -170,8 +185,9 @@ export default {
   
 <style lang="scss" scoped>
 .flash-cards__container {
-    margin-top: 90px;
-    padding: 15px;
+    margin: 90px auto 0 auto;
+    padding: 15px 15px 100px 15px;
+    max-width: 1450px;
 }
 .flash-cards__top-settings-wrapper {
     display: flex;
@@ -326,4 +342,66 @@ input:checked + .slider:before {
     border: 1px solid #9a9796;
     cursor: pointer;
 }
+.flash-cards__next-btn-container {
+    padding: 0 15px;
+}
+.flash-cards__next-btn {
+    margin-bottom: 12px;
+    margin-right: 12px;
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid #9a9796;
+    padding: 10px;
+    background-color: #f2efee;
+    color: #9a9796;
+    transition: 0.25s ease-in-out;
+}
+.flash-cards__next-btn:hover {
+    cursor: pointer;
+    background-color: #e0dbda;
+    color: #8b8988;
+}
+.flash-cards__results-text {
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    color: #9a9796;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.ctas__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 15px;
+}
+@media (max-width: 1024px) {
+    .flash-cards__container {
+        margin: 70px auto 0 auto;
+    }
+}
+@media (max-width: 600px) {
+    .ctas__wrapper {
+        flex-direction: column;
+    }
+    .flash-cards__next-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 440px) {
+    .flash-cards__progress-bar-container {
+        width: 200px;
+    }
+}
+@media (max-width: 38px) {
+    .flash-cards__progress-bar-container {
+        width: 190px;
+    }
+}
+@media (max-width: 365px) {
+    .flash-cards__progress-bar-text {
+        display: None;
+    }
+}
+
 </style>

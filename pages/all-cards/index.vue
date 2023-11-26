@@ -44,17 +44,17 @@ export default {
                 {
                     hid: "description",
                     name: "description",
-                    content: "83 yoga pose flash cards to learn their Sanskrit names",
+                    content: "79 yoga pose flash cards to learn their Sanskrit names",
                 },
                 {
                     hid: "og:description",
                     name: "og:description",
-                    content: "83 yoga pose flash cards to learn their Sanskrit names",
+                    content: "79 yoga pose flash cards to learn their Sanskrit names",
                 },
                 {
                     hid: "twitter:description",
                     name: "twitter:description",
-                    content: "83 yoga pose flash cards to learn their Sanskrit names",
+                    content: "79 yoga pose flash cards to learn their Sanskrit names",
                 },
                 // don't need to edit
                 {

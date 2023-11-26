@@ -20,37 +20,37 @@ export default {
   },
   head() {
       return {
-        title: `Practice 83 yoga poses in Sanskrit`,
+        title: `Practice 79 yoga poses in Sanskrit`,
         meta: [
           // titles
           {
             hid: 'og:title',
             property: 'og:title',
-            content: `Practice 83 yoga poses in Sanskrit`,
+            content: `Practice 79 yoga poses in Sanskrit`,
           },
           {
             hid: 'twitter:title',
             name: 'twitter:title',
-            content: `Practice 83 yoga poses in Sanskrit`,
+            content: `Practice 79 yoga poses in Sanskrit`,
           },
           // descriptions
           {
             hid: 'description',
             name: 'description',
             content:
-              '83 yoga pose flash cards to learn their Sanskrit names',
+              '79 yoga pose flash cards to learn their Sanskrit names',
           },
           {
             hid: 'og:description',
             name: 'og:description',
             content:
-              '83 yoga pose flash cards to learn their Sanskrit names',
+              '79 yoga pose flash cards to learn their Sanskrit names',
           },
           {
             hid: 'twitter:description',
             name: 'twitter:description',
             content:
-              '83 yoga pose flash cards to learn their Sanskrit names',
+              '79 yoga pose flash cards to learn their Sanskrit names',
           },
           // don't need to edit
           {
@@ -82,7 +82,7 @@ export default {
       }
   },
   created() {
-    this.poses = getYogaPoses();
+    this.poses = getYogaPoses().sort(() => 0.5 - Math.random());
   }
 }
 </script>
