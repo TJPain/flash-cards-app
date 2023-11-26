@@ -77,13 +77,13 @@ export default {
         border: 1px solid #e3e3e3;
         border-radius: 20px;
         margin: 10px;
-        padding: 15px 20px 15px 15px;
+        padding: 25px 30px 25px 25px;
         display: flex;
         flex-direction: row;
     }
     .card__image-container {
-        height: 150px;
-        width: 250px;
+        height: 450px;
+        width: auto;
         border-radius: 10px;
         background-color: #c8baa8;
         flex-direction: row;
@@ -94,26 +94,41 @@ export default {
         flex-shrink: 0;
     }
     .card__image {
-        height: 150px;
+        height: 450px;
         width: auto;
         border-radius: 10px;
     }
     .card__text-wrapper {
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
+        margin-left: 30px;
+        width: 100%;
     }
     .card__english-title {
-        font-size: 16px;
+        font-size: 22px;
+        font-weight: 700;
         color: #9a9796;
 
     }
     .card__answers-wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
     .card__answer-button {
-        margin: 5px;
+        margin-bottom: 12px;
+        min-height: 40px;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #9a9796;
+        padding: 10px;
+        background-color: #f2efee;
+        color: #9a9796;
+        transition: 0.25s ease-in-out;
+    }
+    .card__answer-button:hover {
+        cursor: pointer;
+        background-color: #e0dbda;
+        color: #8b8988;
     }
 </style>
