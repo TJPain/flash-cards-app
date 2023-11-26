@@ -23,14 +23,14 @@
                     <div class="toggle-container">
                         <span class="toggle-label">Auto transition to next question</span>
                         <label class="switch">
-                            <input v-model="autoTransition" type="checkbox">
+                            <input v-model="autoTransition" type="checkbox" @change="saveAutoTransitionSetting">
                             <span class="slider round"></span>
                         </label>
                     </div>
                     <div class="toggle-container">
                         <span class="toggle-label">Show English Names</span>
                         <label class="switch">
-                            <input v-model="showEnglishNames" type="checkbox">
+                            <input v-model="showEnglishNames" type="checkbox" @change="saveShowEnglishNamesSetting">
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -72,9 +72,7 @@ export default {
             correctCount: 0,
             showResult: false,
             resultMessage: '',
-            showEnglishNames: false,
             showSettings: false,
-            autoTransition: false
         };
     },
     computed: {
@@ -89,11 +87,29 @@ export default {
             };
         }
     },
+    watch: {
+        autoTransition(newVal) {
+            this.saveAutoTransitionSetting();
+        },
+        showEnglishNames(newVal) {
+            this.saveShowEnglishNamesSetting();
+        }
+    },
     mounted() {
         window.addEventListener('click', this.handleClickOutside);
+        if (typeof window !== 'undefined') {
+            this.autoTransition = localStorage.getItem('autoTransition') === 'true';
+            this.showEnglishNames = localStorage.getItem('showEnglishNames') === 'true';
+        }
     },
     beforeDestroy() {
         window.removeEventListener('click', this.handleClickOutside);
+    },
+    created() {
+        if (typeof window !== 'undefined') {
+            this.autoTransition = localStorage.getItem('autoTransition') === 'false';
+            this.showEnglishNames = localStorage.getItem('showEnglishNames') === 'false';
+        }
     },
     methods: {
         handleAnswer(result) {
@@ -141,6 +157,12 @@ export default {
                 settingsDropdown && !settingsDropdown.contains(event.target)) {
                 this.showSettings = false;
             }
+        },
+        saveAutoTransitionSetting() {
+        localStorage.setItem('autoTransition', this.autoTransition);
+        },
+        saveShowEnglishNamesSetting() {
+            localStorage.setItem('showEnglishNames', this.showEnglishNames);
         },
     },
 }
