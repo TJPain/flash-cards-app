@@ -57,9 +57,9 @@
                 Your score: {{ correctCount }} out of {{ poses.length }} ({{ (correctCount / poses.length) * 100 }} %)
             </p>
             <div class="ctas__wrapper">
-                <a class="flash-cards__next-btn" href="/quick-practice"> Quick practice </a>
-                <a class="flash-cards__next-btn" href="/practice"> Practice all </a>
-                <a class="flash-cards__next-btn" href="/all-cards">See all poses</a>
+                <NuxtLink class="flash-cards__next-btn" to="/quick-practice">Quick practice</NuxtLink>
+                <NuxtLink class="flash-cards__next-btn" to="/practice">Practice all</NuxtLink>
+                <NuxtLink class="flash-cards__next-btn" to="/all-cards">See all poses</NuxtLink>
             </div>
         </div>
     </div>
@@ -86,7 +86,9 @@ export default {
             showResult: false,
             resultMessage: '',
             showSettings: false,
-            quizCompleted: false
+            quizCompleted: false,
+            autoTransition: this.$store.state.autoTransition,
+            showEnglishNames: this.$store.state.showEnglishNames,
         };
     },
     computed: {
@@ -102,20 +104,10 @@ export default {
             };
         }
     },
-    watch: {
-        autoTransition(newVal) {
-            this.saveAutoTransitionSetting();
-        },
-        showEnglishNames(newVal) {
-            this.saveShowEnglishNamesSetting();
-        }
-    },
     mounted() {
         window.addEventListener('click', this.handleClickOutside);
-        if (typeof window !== 'undefined') {
-            this.autoTransition = localStorage.getItem('autoTransition') === 'true';
-            this.showEnglishNames = localStorage.getItem('showEnglishNames') === 'true';
-        }
+        this.autoTransition = this.$store.state.autoTransition;
+        this.showEnglishNames = this.$store.state.showEnglishNames;
     },
     beforeDestroy() {
         window.removeEventListener('click', this.handleClickOutside);
@@ -174,10 +166,10 @@ export default {
             }
         },
         saveAutoTransitionSetting() {
-        localStorage.setItem('autoTransition', this.autoTransition);
+            this.$store.commit('setAutoTransition', this.autoTransition);
         },
         saveShowEnglishNamesSetting() {
-            localStorage.setItem('showEnglishNames', this.showEnglishNames);
+            this.$store.commit('setShowEnglishNames', this.showEnglishNames);
         },
     },
 }

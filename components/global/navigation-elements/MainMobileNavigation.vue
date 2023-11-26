@@ -10,17 +10,15 @@
       <span></span>
       <span></span>
     </div>
-    <div class="n-mobile__submenu" :class="{ active: mobileMenu }">
-      <div class="n-mobile__fscreen">
-        <div class="n-fscreen__link">
-          <a href="/quick-practice"> Quick practice </a>
-        </div>
-        <div class="n-fscreen__link">
-          <a href="/practice"> Practice all poses </a>
-        </div>
-        <div class="n-fscreen__link">
-          <a href="/all-cards"> See all poses </a>
-        </div>
+    <div class="n-mobile__fscreen">
+      <div class="n-fscreen__link">
+        <NuxtLink to="/quick-practice">Quick practice</NuxtLink>
+      </div>
+      <div class="n-fscreen__link">
+        <NuxtLink to="/practice">Practice all poses</NuxtLink>
+      </div>
+      <div class="n-fscreen__link">
+        <NuxtLink to="/all-cards">See all poses</NuxtLink>
       </div>
     </div>
   </div>

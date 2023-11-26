@@ -2,13 +2,13 @@
   <nav class="n-main__navigation">
     <ul class="n-navigation__list">
       <li class="n-navigation__item">
-        <a class="navigation__text" href="/quick-practice">Quick practice</a>
+        <NuxtLink class="navigation__text" to="/quick-practice">Quick practice</NuxtLink>
       </li>
       <li class="n-navigation__item">
-        <a class="navigation__text" href="/practice">Practice all poses</a>
+        <NuxtLink class="navigation__text" to="/practice">Practice all poses</NuxtLink>
       </li>
       <li class="n-navigation__item">
-        <a class="navigation__text" href="/all-cards">See all poses</a>
+        <NuxtLink class="navigation__text" to="/all-cards">See all poses</NuxtLink>
       </li>
     </ul>
   </nav>

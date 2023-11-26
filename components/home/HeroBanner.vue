@@ -18,8 +18,8 @@
         <div class="hero__buttons-glass-background">
           <p class="hero__glass-title">Practice all 79 poses or 10 at random</p>
           <div class="hero_buttons-flex-container">
-            <a class="hero__cta-button" href="/practice"> Practice all </a>
-            <a class="hero__cta-button" href="/quick-practice"> Quick practice </a>
+            <NuxtLink class="hero__cta-button" to="/practice">Practice all</NuxtLink>
+            <NuxtLink class="hero__cta-button" to="/quick-practice">Quick practice</NuxtLink>
           </div>
         </div>
       </div>

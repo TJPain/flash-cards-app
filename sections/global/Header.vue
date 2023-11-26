@@ -1,14 +1,14 @@
 <template>
   <header class="header__container">
     <div class="header__wrapper">
-      <a href="/" class="header__logo-container">
+      <NuxtLink to="/" class="header__logo-container">
         <img
           src="@/assets/images/header/logo.png"
           alt="Yoga poses"
           class="header__logo-icon"
         />
-        <h1 class="header__logo-text" href="/">Yoga poses</h1>
-      </a>
+        <h1 class="header__logo-text">Yoga poses</h1>
+      </NuxtLink>
       <MainNavigation />
       <MainMobileNavigation />
     </div>
