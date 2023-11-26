@@ -11,12 +11,13 @@
             </div>
             <button
                 id="settings-btn"
+                ref="settingsButton"
+                v-click-outside="hideSettings"
                 class="flash-cards__settings-btn"
                 @click.prevent="toggleSettings"
             >
-                <span>Settings</span>
             </button>
-            <div v-if="showSettings" class="flash-cards__settings-dropdown">
+            <div v-if="showSettings" ref="settingsDropdown" class="flash-cards__settings-dropdown">
                 <button class="flash-cards__settings-close-icon" @click.prevent="toggleSettings">X</button>
                 <div class="flash-cards__bottom-settings-wrapper">
                     <div class="toggle-container">
@@ -88,6 +89,12 @@ export default {
             };
         }
     },
+    mounted() {
+        window.addEventListener('click', this.handleClickOutside);
+    },
+    beforeDestroy() {
+        window.removeEventListener('click', this.handleClickOutside);
+    },
     methods: {
         handleAnswer(result) {
             const currentPose = this.poses[this.currentCardIndex];
@@ -101,7 +108,7 @@ export default {
             if (this.autoTransition) {
                 this.nextCardTimeout = setTimeout(() => {
                     this.moveToNextCard();
-                }, 3000);
+                }, 2000);
             }
         },
         goToNextCard() {
@@ -119,7 +126,23 @@ export default {
         toggleSettings() {
             this.showSettings = !this.showSettings;
         },
-    }
+        hideSettings() {
+            if (this.showSettings) {
+                this.showSettings = false;
+            }
+        },
+        handleClickOutside(event) {
+            if (!this.showSettings) return;
+
+            const settingsButton = this.$refs.settingsButton;
+            const settingsDropdown = this.$refs.settingsDropdown;
+
+            if (settingsButton && !settingsButton.contains(event.target) &&
+                settingsDropdown && !settingsDropdown.contains(event.target)) {
+                this.showSettings = false;
+            }
+        },
+    },
 }
 </script>
   
@@ -234,8 +257,7 @@ input:checked + .slider:before {
     margin-left: 8px;
     font-size: 14px;
 }
-.flash-cards__settings-btn {
-    position: relative;
+.flash-cards__settings-btn {    
     background-image: url(~@/assets/images/icons/settings.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -248,9 +270,6 @@ input:checked + .slider:before {
 }
 .flash-cards__settings-btn:hover {
   cursor: pointer;
-}
-.flash-cards__settings-btn span {
-  display: none;
 }
 .flash-cards__settings-btn:hover {
   animation-duration: 0.5s;
@@ -269,8 +288,9 @@ input:checked + .slider:before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
     top: 40px;
-    right: 15px;
+    right: 0px;
     text-align: right;
+    min-width: 380px;
 }
 .flash-cards__settings-close-icon {
     background-color: transparent;
