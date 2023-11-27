@@ -133,22 +133,22 @@ export default {
         background-color: #e0dbda;
         color: #8b8988;
     }
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         .card__image {
             width: 700px;
         }
     }
-    @media (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         .card__image {
             width: 600px;
         }
     }
-    @media (max-width: 1000px) {
+    @media only screen and (max-width: 1000px) {
         .card__image {
             width: 500px;
         }
     }
-    @media (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         .card {
             flex-direction: column;
         }
@@ -162,10 +162,14 @@ export default {
             margin-left: 0;
         }
     }
-    @media (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         .card__answer-button:hover {
             background-color: #f2efee;
             color: #9a9796;
+        }
+        .card {
+            margin: 10px 0 20px 0;
+            padding: 12px;
         }
     }
 </style>

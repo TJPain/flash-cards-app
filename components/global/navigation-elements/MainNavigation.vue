@@ -77,7 +77,7 @@ export default {
   }
 }
 
-@media all and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .n-main__navigation {
     display: none;
   }

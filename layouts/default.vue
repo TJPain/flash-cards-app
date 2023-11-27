@@ -40,7 +40,7 @@ export default {
     padding-top: 83px;
   }
 
-  @media all and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .sticky--header__layout {
       padding-top: 66px;
       overflow: hidden;
@@ -50,7 +50,7 @@ export default {
       }
     }
   }
-  @media all and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
 
   }
 </style>

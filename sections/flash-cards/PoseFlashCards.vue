@@ -367,30 +367,33 @@ input:checked + .slider:before {
     width: 100%;
     padding: 0 15px;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .flash-cards__container {
         margin: 70px auto 0 auto;
     }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .ctas__wrapper {
         flex-direction: column;
     }
     .flash-cards__next-btn {
         width: 100%;
     }
+    .flash-cards__settings-close-icon {
+        font-size: 16px;
+    }
 }
-@media (max-width: 440px) {
+@media only screen and (max-width: 440px) {
     .flash-cards__progress-bar-container {
         width: 200px;
     }
 }
-@media (max-width: 38px) {
+@media only screen and (max-width: 38px) {
     .flash-cards__progress-bar-container {
         width: 190px;
     }
 }
-@media (max-width: 365px) {
+@media only screen and (max-width: 365px) {
     .flash-cards__progress-bar-text {
         display: None;
     }

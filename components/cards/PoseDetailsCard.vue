@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card__container">
         <div class="card__image-container">
             <img class="card__image" :src="imageUrl" alt="Yoga Pose">
         </div>
@@ -31,7 +31,7 @@
 </script>
   
 <style lang="scss" scoped>
-    .card {
+    .card__container {
         border: 1px solid #e3e3e3;
         border-radius: 20px;
         margin: 10px;
@@ -43,7 +43,6 @@
         height: 150px;
         width: 250px;
         border-radius: 10px;
-        background-color: #c8baa8;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -71,5 +70,27 @@
         font-size: 20px;
         font-weight: 700;
         color: #7a7675;
+    }
+    @media only screen and (max-width: 600px) {
+        .card__container {
+            flex-direction: column;
+            margin: 10px 0;
+            padding: 12px;
+        }
+        .card__image-container {
+            height: auto;
+            width: 100%;
+        }
+        .card__image {
+            height: auto;
+            width: 100%;
+        }
+        .card__text-container {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .card__english-title, .card__sanskrit-title {
+            margin-bottom: 10px;
+        }
     }
 </style>

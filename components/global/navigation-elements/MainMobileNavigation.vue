@@ -10,15 +10,17 @@
       <span></span>
       <span></span>
     </div>
-    <div class="n-mobile__fscreen">
-      <div class="n-fscreen__link">
-        <NuxtLink to="/quick-practice">Quick practice</NuxtLink>
-      </div>
-      <div class="n-fscreen__link">
-        <NuxtLink to="/practice">Practice all poses</NuxtLink>
-      </div>
-      <div class="n-fscreen__link">
-        <NuxtLink to="/all-cards">See all poses</NuxtLink>
+    <div class="n-mobile__submenu" :class="{ active: mobileMenu }">
+      <div class="n-mobile__fscreen">
+        <div class="n-fscreen__link">
+          <NuxtLink to="/quick-practice">Quick practice</NuxtLink>
+        </div>
+        <div class="n-fscreen__link">
+          <NuxtLink to="/practice">Practice all poses</NuxtLink>
+        </div>
+        <div class="n-fscreen__link">
+          <NuxtLink to="/all-cards">See all poses</NuxtLink>
+        </div>
       </div>
     </div>
   </div>
@@ -30,20 +32,15 @@ export default {
   data() {
     return {
       mobileMenu: false,
-      aboutSelected: false,
     }
   },
   methods: {
     openMobileMenu() {
       this.mobileMenu = !this.mobileMenu
       document.querySelector('body').classList.toggle('mobileMenuOpened')
-      this.backMobileMenu()
     },
     selectMobileSubmenu(selected) {
       this[selected] = true
-    },
-    backMobileMenu() {
-      this.aboutSelected = false
     },
     handleCloseMenu() {
       this.openMobileMenu();
@@ -113,7 +110,7 @@ export default {
     left: 50%;
   }
 }
-@media all and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .mobileButton {
     display: block;
   }
@@ -220,7 +217,7 @@ export default {
     padding: 16px 0 0 0;
     border-top: 1px solid #e4e4e4;
   }
-  @media all and (max-width: 370px) {
+  @media only screen and (max-width: 370px) {
     .n-mobile__cta {
       display: none;
     }

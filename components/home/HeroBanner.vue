@@ -114,12 +114,12 @@ export default {
    border: none;
    outline: none;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .hero-banner, .hero__image {
     min-height: 100vh;
   }
 }
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .hero-banner {
     width: auto;
     display: flex;
@@ -132,7 +132,7 @@ export default {
     display: block;
   }
 }
-@media (max-width: 370px) {
+@media only screen and (max-width: 370px) {
   .hero-banner {
     min-height: unset;
   }

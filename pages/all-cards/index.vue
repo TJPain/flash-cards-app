@@ -100,11 +100,20 @@ export default {
     flex-wrap: wrap;
   }
   .card {
-    width: 45%;
+    width: calc(50% - 20px);
   }
-  @media (max-width: 1100px) {
+  @media only screen and (max-width: 1024px) {
+    .poses__container {
+        padding: 0 15px;
+        margin-top: 80px;
+    }
     .card {
       width: 95%;
     }
-}
+  }  
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }
 </style>

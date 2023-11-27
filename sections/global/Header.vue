@@ -92,13 +92,13 @@ export default {
   position: relative;
 }
 
-@media all and (min-width: 668px) and (max-width: 1270px) {
+@media only screen and (min-width: 668px) and (max-width: 1270px) {
   .header__wrapper {
     width: calc(100% - 100px);
     padding: 0;
   }
 }
-@media all and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .header__wrapper {
     height: 66px;
     position: fixed;

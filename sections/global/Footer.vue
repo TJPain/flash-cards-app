@@ -193,7 +193,7 @@ export default {
   font-weight: 500;
 }
 
-@media all and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer__container {
     margin-top: 20px;
   }
