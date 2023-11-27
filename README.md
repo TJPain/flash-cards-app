@@ -1,4 +1,4 @@
-# personal-site
+# Yoga app
 
 ## Build Setup
 
